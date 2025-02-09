@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <!--meta http-equiv="X-UA-Compatible" content="IE=edge" /-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
@@ -19,7 +19,7 @@
             <a-assets>
                 <a-asset-item
                     id="animated-asset"
-                    src="./assets/asset.gltf"
+                    src="assets/asset.gltf"
                 ></a-asset-item>
             </a-assets>
 
@@ -28,15 +28,38 @@
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
                     scale="0.00025046411610187024 0.00025046411610187024 0.00025046411610187024"
-                    gps-entity-place="latitude: 35.5339607; longitude: 139.5894846;"
+                    gps-entity-place="latitude: 35.533771135766074; longitude: 139.58940420554106;"
+                ></a-entity>
+                <a-entity
+                    look-at="[gps-camera]"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#animated-asset"
+                    scale="0.00025046411610187024 0.00025046411610187024 0.00025046411610187024"
+                    gps-entity-place="latitude: 35.533747125957966; longitude: 139.58950680003105;"
+                ></a-entity>
+                <a-entity
+                    look-at="[gps-camera]"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#animated-asset"
+                    scale="0.00025046411610187024 0.00025046411610187024 0.00025046411610187024"
+                    gps-entity-place="latitude: 35.53372093343179; longitude: 139.58962146446098;"
+                ></a-entity>
+                <a-entity
+                    look-at="[gps-camera]"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#animated-asset"
+                    scale="0.00025046411610187024 0.00025046411610187024 0.00025046411610187024"
+                    gps-entity-place="latitude: 35.53368928411797; longitude: 139.589766974293;"
+                ></a-entity>
+                <a-entity
+                    look-at="[gps-camera]"
+                    animation-mixer="loop: repeat"
+                    gltf-model="#animated-asset"
+                    scale="0.00025046411610187024 0.00025046411610187024 0.00025046411610187024"
+                    gps-entity-place="latitude: 35.533654360721485; longitude: 139.58990711971566;"
                 ></a-entity>
 
-            <a-camera
-                gps-camera
-                arjs-look-controls='smoothingFactor: 0.1'
-                rotation-reader
-            ></a-camera>
+            <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>
-        <script src="./app.js"></script>
     </body>
 </html>
